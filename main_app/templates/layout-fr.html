@@ -1,0 +1,167 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> {{title}} </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/assets/css/slicknav.css">
+    <link rel="stylesheet" href="../static/assets/css/animate.min.css">
+    <link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../static/assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../static/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../static/assets/css/slick.css">
+    <link rel="stylesheet" href="../static/assets/css/nice-select.css">
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+</head>
+
+<body>
+    <!--? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="../static/assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!--? Header Start -->
+        <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="{{ url_for('home.home_page') }}"><img src="../static/assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="{{ url_for('home.home_page') }}">Accueil</a></li>
+
+                                            <li><a href="#">À propos</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url_for('home.about_pycon') }}">Qu'est-ce que PyCon Niger</a></li>
+                                                    <li><a href="https://pythonniger.org/coc">Code de conduite</a></li>
+                                                    <li><a href="{{ url_for('home.about_health') }}">Directives de sécurité et de santé</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="#">PyConNE2024</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url_for('home.sponsorship_page') }}">Parrainage</a></li>
+                                                    <li><a href="{{ url_for('home.speaking_page') }}">Parler à PyConNE</a></li>
+                                                    <li><a href="{{ url_for('home.attending_page') }}">Assister à PyCon Niger</a></li>
+                                                    <li><a href="{{ url_for('home.events_page') }}">Événements</a></li>
+                                                    <li><a href="{{ url_for('home.schedule_page') }}">Horaires</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="#">Langue 🇺🇸 | 🇫🇷</a>
+                                                <ul class="submenu">
+                                                    <li><a href="{{ url_for('home.lang_btn', lang='en') }}">En 🇺🇸</a></li>
+                                                    <li><a href="{{ url_for('home.lang_btn', lang='fr') }}">Fr 🇫🇷</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="https://pythonniger.org/contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>   <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    {% block main %}
+    {% endblock main %}
+
+    <footer style="height: 20px;">
+
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-10 col-lg-8 ">
+                            <div class="footer-copy-right">
+                                <p><a href="https://pythonniger.org" target="_blank">Communauté Python Niger</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-4">
+                            <div class="footer-social f-right">
+                                <a href="https://twitter.com/pythonniger"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/pythonniger"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+
+    <!-- Scroll Up -->
+    <div id="back-top" style="background-color: #f15a24;">
+        <a title="Go to Top" href="#"> <i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="../static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="../static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../static/assets/js/popper.min.js"></script>
+    <script src="../static/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="../static/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="../static/assets/js/owl.carousel.min.js"></script>
+    <script src="../static/assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="../static/assets/js/wow.min.js"></script>
+    <script src="../static/assets/js/animated.headline.js"></script>
+    <script src="../static/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Nice-select, sticky -->
+    <script src="../static/assets/js/jquery.nice-select.min.js"></script>
+    <script src="../static/assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="../static/assets/js/contact.js"></script>
+    <script src="../static/assets/js/jquery.form.js"></script>
+    <script src="../static/assets/js/jquery.validate.min.js"></script>
+    <script src="../static/assets/js/mail-script.js"></script>
+    <script src="../static/assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="../static/assets/js/plugins.js"></script>
+    <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>

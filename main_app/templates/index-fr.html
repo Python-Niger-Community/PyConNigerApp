@@ -1,0 +1,329 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> PyCon Niger </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/assets/img/PyNE-Logo.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../static/assets/css/slicknav.css">
+    <link rel="stylesheet" href="../static/assets/css/flaticon.css">
+    <link rel="stylesheet" href="../static/assets/css/gijgo.css">
+	<link rel="stylesheet" href="../static/assets/css/animate.min.css">
+	<link rel="stylesheet" href="../static/assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="../static/assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="../static/assets/css/themify-icons.css">
+	<link rel="stylesheet" href="../static/assets/css/slick.css">
+	<link rel="stylesheet" href="../static/assets/css/nice-select.css">
+	<link rel="stylesheet" href="../static/assets/css/style.css">
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="../static/assets/img/logo/loder.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+<header>
+    <!--? Header Start -->
+    <div class="header-area">
+        <div class="main-header header-sticky">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <!-- Logo -->
+                    <div class="col-xl-2 col-lg-2 col-md-1">
+                        <div class="logo">
+                            <a href="{{ url_for('home.home_page') }}"><img src="../static/assets/img/logo/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-10 col-lg-10 col-md-10">
+                        <div class="menu-main d-flex align-items-center justify-content-end">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="{{ url_for('home.home_page') }}">Accueil</a></li>
+                                        <li><a href="#">À propos</a>
+                                            <ul class="submenu">
+                                                <li><a href="{{ url_for('home.about_pycon') }}">Qu'est-ce que PyCon Niger</a></li>
+                                                <li><a href="https://pythonniger.org/coc">Code de conduite</a></li>
+                                                <li><a href="{{ url_for('home.about_health') }}">Directives de sécurité et de santé</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li><a href="#">Langue 🇺🇸 | 🇫🇷</a>
+                                            <ul class="submenu">
+                                                <li><a href="{{ url_for('home.lang_btn', lang='en') }}">En 🇺🇸</a></li>
+                                                <li><a href="{{ url_for('home.lang_btn', lang='fr') }}">Fr 🇫🇷</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li><a href="https://pythonniger.org/contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>   
+                    <!-- Mobile Menu -->
+                    <div class="col-12">
+                        <div class="mobile_menu d-block d-lg-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+</header>
+<main>
+    <!--? slider Area Start-->
+    <div class="slider-area position-relative">
+        <div class="slider-active" style="height: 400px;">
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center" style="height: 500px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-8 col-md-9 col-sm-10" >
+                            <div class="hero__caption">
+                             <span data-animation="fadeInLeft" data-delay=".1s">Python au Sahel</span>
+                             <h1 data-animation="fadeInLeft" data-delay=".5s">PyCon Niger</h1>
+                             <p data-animation="" data-delay=".1s" style="padding: 0px;">La plus grande conférence annuelle de<br>
+                             la communauté Python Niger</p>
+                             <p data-animation="fadeInLeft" data-delay=".1s"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+
+    
+    <!--? Accordion Start -->
+    <section class="accordion fix section-padding30">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 col-md-6">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        <h2 style="border: 5px solid;">PyCon Niger</h2>
+                        <p style="font-size: 20px; color: #432c16;">Est la conférence annuelle nationale nationale de la technologie de premier plan organisée par la communauté Python Niger, réunissant des enthousiastes de Python, des développeurs et des professionnels de l'industrie de tout le Niger. En tant que plus grand rassemblement de son genre dans le pays, PyCon Niger sert de plate-forme pour la collaboration, l'innovation et le partage des connaissances au sein de la communauté Python. Les participants ont la possibilité de participer à une grande variété d'activités, notamment des présentations principales, des ateliers techniques, des tables rondes et des événements de réseautage. Grâce à PyCon Niger, les participants sont habilités à explorer les dernières tendances en matière de programmation Python, à échanger des idées et à contribuer à l'avancement de la technologie au Niger et au-delà.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Accordion End -->
+    <!--? Pricing Card Area Start -->
+    <section class="pricing-card-area section-padding2">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="section-tittle text-center mb-100">
+                        <h2 style="border: 5px solid;">Nous nous réunissons tous ici !</h2>
+                        <p style="font-size: 20px; color: #432c16;">Vous cherchez la plate-forme parfaite pour vous connecter avec des personnes partageant les mêmes idées et passionnées par la programmation Python ? Ne cherchez pas plus loin que PyCon Niger - le rassemblement ultime pour les enthousiastes de Python au Niger.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="section-tittle text-center mb-100">
+                        <h2 style="border: 5px solid;">Rencontrez les bons demandeurs d'emploi !</h2>
+                        <p style="font-size: 20px; color: #432c16;">Rejoignez-nous à PyCon Niger pour l'opportunité de vous connecter avec des professionnels qualifiés, des développeurs passionnés et des esprits innovants de tout le Niger. Profitez des séances de réseautage, de la foire de l'emploi et d'autres ressources de recrutement pour trouver les candidats parfaits pour rejoindre votre équipe. Ne manquez pas cette occasion de rencontrer des demandeurs d'emploi motivés et de débloquer le potentiel de votre organisation. À bientôt à PyCon Niger !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="section-tittle text-center mb-100">
+                        <h2 style="border: 5px solid;">Promouvoir vos produits et services</h2>
+                        <p style="font-size: 20px; color: #432c16;">PyCon Niger offre une opportunité inégalée pour les entreprises de promouvoir leurs produits et services auprès d'un public hautement ciblé d'enthousiastes de la technologie et de professionnels de l'industrie. En tant que sponsor de PyCon Niger, vous aurez la possibilité de présenter votre marque à une communauté diversifiée de développeurs Python et d'enthousiastes de la technologie de tout le Niger. La participation en tant que sponsor offre des opportunités de promotion uniques pour élever la visibilité de votre marque et positionner votre entreprise en tant que leader dans l'industrie de la technologie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Card End -->
+
+    <section class="work-company section-padding30" style="background-color: #f15a24;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-8">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle section-tittle2 mb-50">
+                        <h2>Nos principaux partenaires et sponsors.</h2>
+                        <p style="font-size: 20px;">Votre soutien et votre partenariat sont essentiels pour créer une expérience enrichissante et percutante pour les participants. En collaborant avec nous, vous ne gagnerez pas seulement une exposition précieuse pour votre marque, mais vous jouerez également un rôle crucial dans l'autonomisation de la communauté Python, la promotion de l'innovation et l'avancement de la technologie au Niger.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="logo-area">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/salim.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/eesolutions.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/ansi.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/novatech.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/jetbrains2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/digital-niger.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/cisco_brand.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/cisco_brand2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/cisco_brand3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/cisco_brand4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/cisco_brand5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                <div class="single-logo mb-30">
+                                    <img src="../static/assets/img/gallery/cisco_brand6.png" alt="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand Area End-->
+
+    <!--? Blog Area Start -->
+    <section class="home-blog-area section-padding30">
+        <div class="container">
+            <!-- Section Tittle -->
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-8">
+                    <div class="section-tittle text-center mb-50">
+                        <h2 style="border: 5px solid;">Prêt à assister.. ?</h2>
+                        <p style="font-size: 20px; color: #432c16;">Si vous êtes passionné par la programmation Python et que vous souhaitez vous connecter avec des personnes partageant les mêmes idées dans la communauté technologique dynamique du Niger, PyCon Niger est l'événement pour vous !.. Rejoignez-nous à PyCon Niger pour une expérience inoubliable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Area End -->
+    </main>
+
+    <footer style="height: 20px;">
+
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area footer-bg">
+            <div class="container">
+                <div class="footer-border">
+                     <div class="row d-flex justify-content-between align-items-center">
+                         <div class="col-xl-10 col-lg-8 ">
+                             <div class="footer-copy-right">
+                                 <p><a href="https://pythonniger.org" target="_blank">Communauté Python Niger</a></p>
+                             </div>
+                         </div>
+                         <div class="col-xl-2 col-lg-4">
+                             <div class="footer-social f-right">
+                                <a href="https://twitter.com/pythonniger"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/pythonniger"><i class="fab fa-facebook-f"></i></a>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End-->
+    </footer>
+    <!-- Scroll Up -->
+    <div id="back-top" style="background-color: #f15a24;">
+        <a title="Go to Top" href="#"> <i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="./../static/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./../static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./../static/assets/js/popper.min.js"></script>
+    <script src="./../static/assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./../static/assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./../static/assets/js/owl.carousel.min.js"></script>
+    <script src="./../static/assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./../static/assets/js/wow.min.js"></script>
+    <script src="./../static/assets/js/animated.headline.js"></script>
+    <script src="./../static/assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./../static/assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./../static/assets/js/jquery.nice-select.min.js"></script>
+    <script src="./../static/assets/js/jquery.sticky.js"></script>
+    
+    <!-- counter , waypoint -->
+    <script src="./../static/assets/js/jquery.counterup.min.js"></script>
+    <script src="./../static/assets/js/waypoints.min.js"></script>
+    <script src="./../static/assets/js/jquery.countdown.min.js"></script>
+    <!-- contact js -->
+    <script src="./../static/assets/js/contact.js"></script>
+    <script src="./../static/assets/js/jquery.form.js"></script>
+    <script src="./../static/assets/js/jquery.validate.min.js"></script>
+    <script src="./../static/assets/js/mail-script.js"></script>
+    <script src="./../static/assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./../static/assets/js/plugins.js"></script>
+    <script src="./../static/assets/js/main.js"></script>
+    
+    </body>
+</html>
