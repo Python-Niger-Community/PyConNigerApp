@@ -203,7 +203,7 @@
 
     
     // Use this for real timer date
-    var timerdate = "2024/09/28";
+    var timerdate = "2025/09/13";
 
     $("#countdown").countdown(timerdate, function(event) {
         $(this).html(event.strftime("<div class='cd-item'><span>%D</span><p>J(Days)</p> </div>" + "<div class='cd-item'><span>%H</span><p>H(hours)</p> </div>" + "<div class='cd-item'><span>%M</span><p>Min</p> </div>" + "<div class='cd-item'><span>%S</span><p>Sec</p> </div>"));
